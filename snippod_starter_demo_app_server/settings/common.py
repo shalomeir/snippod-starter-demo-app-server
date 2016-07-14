@@ -89,7 +89,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 #We use node js server for static source.
-STATIC_ROOT = 'staticfiles'
+STATIC_ROOT = 'static'
 STATIC_URL = '/static/'
 
 # STATICFILES_FINDERS = (
@@ -99,9 +99,9 @@ STATIC_URL = '/static/'
 # )
 
 #MEDIA FILE (user uploaded files)
-MEDIA_ROOT = 'mediafiles'
+MEDIA_ROOT = 'media'
 
-MEDIA_URL = '/mediafiles/'
+MEDIA_URL = '/media/'
 
 
 # TEMPLATE_DIRS = (
@@ -175,14 +175,3 @@ LOGGING = {
     },
 }
 
-#For python-social-auth
-# SOCIAL_AUTH_URL_NAMESPACE = 'social'
-
-# SOCIAL_AUTH_ADMIN_USER_SEARCH_FIELDS = ['email', 'username']
-
-# AUTHENTICATION_BACKENDS = (
-#     'social.backends.facebook.FacebookOAuth2',
-#     'social.backends.google.GoogleOAuth2',
-#     # 'social.backends.twitter.TwitterOAuth',
-#     'django.contrib.auth.backends.ModelBackend',
-# )
