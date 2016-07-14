@@ -1,0 +1,5 @@
+gunicorn==19.3.0
+django-storages==1.1.8
+django-storages-redux==1.2.3
+boto==2.38.0
+botocore==1.1.4

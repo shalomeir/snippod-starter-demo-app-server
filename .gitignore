@@ -1,0 +1,34 @@
+.DS_Store
+.idea
+
+*.iml
+auto_default_code/
+
+# python fabric
+fabric/
+fabfile/
+
+# django migrations
+djangoapps/*/migrations
+
+# Python compiled byte code
+*.pyc
+
+# SQLite3 database
+*.sqlite3
+
+# Staticfiles
+staticfiles/
+
+# vrtualenv
+venv/
+
+#backup
+backup/
+
+#log
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
