@@ -66,4 +66,4 @@ Contributions, questions and comments are all welcome and encouraged.
 ## License
 [MIT License](http://opensource.org/licenses/MIT).
 
-Copyright 2016 [Snippod Inc.](http://www.snippod.com/).
+Copyright 2016, [Snippod Inc.](http://www.snippod.com/)

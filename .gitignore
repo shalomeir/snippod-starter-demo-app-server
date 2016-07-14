@@ -27,6 +27,7 @@ venv/
 backup/
 
 #log
+logs/*.log
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
