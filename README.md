@@ -4,9 +4,9 @@
 
 ## Overview
 
-[**Snippod-Starter-Demo-App-Server**](https://github.com/shalomeir/snippod-starter-demo-app-server) is a **server part** of snippod-starter demo application. A 'snippod-starter-demo-app' is a 'Full Stack Single Page Application' for the starter who want to be a web application developer. 
+[**Snippod-Starter-Demo-App-Server**](https://github.com/shalomeir/snippod-starter-demo-app-server) is a **server part** of snippod-starter demo application. A [**Snippod-Starter-Demo-App**](https://github.com/shalomeir/snippod-starter-demo-app) is a 'Full Stack Single Page Application' for the starter who want to be a web application developer. 
 
-This repository code is based on [Django](https://www.djangoproject.com/) and [Djnago REST Framework](http://www.django-rest-framework.org/).
+This repository code is based on [Django](https://www.djangoproject.com/) and [django REST Framework](http://www.django-rest-framework.org/).
 You can check out the hosted version [**DEMO**](http://snippod-boilerplate-dev.elasticbeanstalk.com/) at [http://snippod-boilerplate-dev.elasticbeanstalk.com/](http://snippod-boilerplate-dev.elasticbeanstalk.com/).
 
 ## Base Repository, Module
@@ -14,7 +14,7 @@ You can check out the hosted version [**DEMO**](http://snippod-boilerplate-dev.e
 We made this using these technologies.
 
 * [Django](https://www.djangoproject.com/)
-* [Djnago REST Framework](http://www.django-rest-framework.org/)
+* [django REST Framework](http://www.django-rest-framework.org/)
 
 
 ## Getting Started
@@ -44,15 +44,12 @@ git clone https://github.com/shalomeir/snippod-starter-demo-app-server
 ## Description
 
 Django Rest framework provide browserble API. So you can see all get json by browserble API address too.
-- account list: ['~/api/v1/accounts/'](http://snippod-boilerplate-dev.elasticbeanstalk.com/api/v1/accounts/)
-- post list: ['~/api/v1/posts/'](http://snippod-boilerplate-dev.elasticbeanstalk.com/api/v1/posts/)
-- post list sorted by upvote count: ['~/api/v1/posts/?sorting=upvotes'](http://snippod-boilerplate-dev.elasticbeanstalk.com/api/v1/posts/?sorting=upvotes)
-- comment list: ['~/api/v1/comments/'](http://snippod-boilerplate-dev.elasticbeanstalk.com/api/v1/comments/)
-- single account, post or comment like this ['~/api/v1/posts/:postId/'](http://snippod-boilerplate-dev.elasticbeanstalk.com/api/v1/posts/10/)
-- user's posts or comments like this ['~/api/v1/user/:userId/posts/'](http://snippod-boilerplate-dev.elasticbeanstalk.com/api/v1/user/7/posts/)
-
-
-More information is available at [**this blog post**](http://www.shalomeir.com/2015/05/snippod-boilerplate-1-full-stack-react-flux-django/) written in **Korean**.
+- account list: ['~/api/v1/accounts/'](http://snippod-demo-rest.ap-northeast-2.elasticbeanstalk.com/api/v1/accounts/)
+- post list: ['~/api/v1/posts/'](http://snippod-demo-rest.ap-northeast-2.elasticbeanstalk.com/api/v1/posts/)
+- post list sorted by upvote count: ['~/api/v1/posts/?sorting=upvotes'](http://snippod-demo-rest.ap-northeast-2.elasticbeanstalk.com/api/v1/posts/?sorting=upvotes)
+- comment list: ['~/api/v1/comments/'](http://snippod-demo-rest.ap-northeast-2.elasticbeanstalk.com/api/v1/comments/)
+- single account, post or comment like this ['~/api/v1/posts/:postId/'](http://snippod-demo-rest.ap-northeast-2.elasticbeanstalk.com/api/v1/posts/10/)
+- user's posts or comments like this ['~/api/v1/user/:userId/posts/'](http://snippod-demo-rest.ap-northeast-2.elasticbeanstalk.com/api/v1/user/7/posts/)
 
 
 ## Reference
