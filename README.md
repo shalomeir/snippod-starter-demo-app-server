@@ -9,6 +9,8 @@
 This repository code is based on [Django](https://www.djangoproject.com/) and [django REST Framework](http://www.django-rest-framework.org/).
 You can check out the hosted version [**DEMO**](http://snippod-boilerplate-dev.elasticbeanstalk.com/) at [http://snippod-boilerplate-dev.elasticbeanstalk.com/](http://snippod-boilerplate-dev.elasticbeanstalk.com/).
 
+![Alt Stack Diagram](https://raw.githubusercontent.com/shalomeir/snippod-starter-demo-app-server/master/SnippodStarterDemoAppServerArchitecture.png "Stack Diagram")
+
 ## Base Repository, Module
   
 We made this using these technologies.
