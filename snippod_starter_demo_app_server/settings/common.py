@@ -113,7 +113,9 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticatedOrReadOnly',
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.SessionAuthentication',
+        # 'rest_framework.authentication.SessionAuthentication',
+        'snippod_starter_demo_app_server.csrf_handler.CsrfExemptSessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication'
     ),
     'DEFAULT_RENDERER_CLASSES': (
         'utils.api.renderers.CamelCaseJSONRenderer',
@@ -136,18 +138,8 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # CORS HEADER Setting
 # https://github.com/ottoyiu/django-cors-headers/
-# CORS_ORIGIN_ALLOW_ALL = True #Do Not use this options
-CORS_ORIGIN_WHITELIST = (
-    'localhost:3000',
-    '127.0.0.1:3000'
-)
-
-CORS_ORIGIN_REGEX_WHITELIST = ('^(https?://)?(\w+\.)?elasticbeanstalk\.com$', )
-
-CORS_URLS_REGEX = r'^/api/.*$'
-
+CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
-
 
 # USER Model default is changed by this setup.
 AUTH_USER_MODEL = 'authentication.Account'
