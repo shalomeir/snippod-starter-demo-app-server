@@ -1,4 +1,4 @@
-from django.conf.urls import include, patterns, url
+from django.conf.urls import include, url
 from rest_framework.routers import DefaultRouter
 
 
@@ -17,7 +17,6 @@ router.register(r'post/(?P<postid>[0-9]+)/comments', PostCommentViewSet,
 router.register(r'comments', CommentViewSet, base_name='comment')
 
 
-urlpatterns = patterns(
-    '',
+urlpatterns = [
     url(r'^', include(router.urls)),
-)
+]

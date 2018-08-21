@@ -91,6 +91,9 @@ class Account(AbstractBaseUser, PermissionsMixin):
     def __str__(self):
         return self.email
 
+    def get_short_name(self):
+        return self.username
+
     def get_email_id(self):
         """
         Returns account id.

@@ -32,13 +32,12 @@ INSTALLED_APPS = (
     'compressor',
     'rest_framework',
     'corsheaders',
-    'argonauts',
     'main',
     'authentication',
     'posts',
 )
 
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE_CLASSES = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -48,7 +47,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-)
+]
 
 ROOT_URLCONF = 'snippod_starter_demo_app_server.urls'
 
@@ -141,29 +140,19 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 
+# Database
+# https://docs.djangoproject.com/en/1.7/ref/settings/#databases
+DATABASE_OPTIONS = {'charset': 'utf8'}
+
 # USER Model default is changed by this setup.
 AUTH_USER_MODEL = 'authentication.Account'
 
 # Node server is important for React Server-side rendering.
 NODE_SERVER = 'http://0.0.0.0:3000/'
 
-#LOG
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'file': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': './logs/debug.log',
-        },
-    },
-    'loggers': {
-        'django.request': {
-            'handlers': ['file'],
-            'level': 'DEBUG',
-            'propagate': True,
-        },
-    },
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
 }
-
