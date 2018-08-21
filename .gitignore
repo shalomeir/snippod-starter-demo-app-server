@@ -8,9 +8,6 @@ auto_default_code/
 fabric/
 fabfile/
 
-# django migrations
-djangoapps/*/migrations
-
 # Python compiled byte code
 *.pyc
 
@@ -18,7 +15,7 @@ djangoapps/*/migrations
 *.sqlite3
 
 # Staticfiles
-staticfiles/
+static/
 
 # vrtualenv
 venv/

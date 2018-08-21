@@ -28,8 +28,9 @@ INSTALLED_APPS += (
     'debug_toolbar',
 )
 
-# MIDDLEWARE_CLASSES += (
-# )
+MIDDLEWARE_CLASSES += [
+    'debug_toolbar.middleware.DebugToolbarMiddleware'
+]
 
 
 TEMPLATES = [
@@ -49,33 +50,23 @@ TEMPLATES = [
 ]
 
 
-# Database
-# https://docs.djangoproject.com/en/1.7/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+#LOG
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': './logs/debug.log',
+        },
+    },
+    'loggers': {
+        'django.request': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
 }
-DATABASE_OPTIONS = {'charset': 'utf8'}
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.7/howto/static-files/
-
-#Do not use static server
-#
-# STATICFILES_DIRS = (
-#     os.path.join(BASE_DIR, 'snippod_webapp/.tmp'), # grunt serve
-#     os.path.join(BASE_DIR, 'snippod_webapp/dist/client'), #grunt
-#     # os.path.join(BASE_DIR, 'static'),
-# )
-#
-# COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
-
-#MEDIA FILE (user uploaded files)
-
-# TEMPLATE_DIRS = (
-#     os.path.join(BASE_DIR, 'djangoapps/templates'),
-# )
