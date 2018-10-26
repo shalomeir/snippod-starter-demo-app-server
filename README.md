@@ -7,7 +7,6 @@
 [**Snippod-Starter-Demo-App-Server**](https://github.com/shalomeir/snippod-starter-demo-app-server) is a **server part** of snippod-starter demo application. A [**Snippod-Starter-Demo-App**](https://github.com/shalomeir/snippod-starter-demo-app) is a 'Full Stack Single Page Application' for the starter who want to be a web application developer. 
 
 This repository code is based on [Django](https://www.djangoproject.com/) and [django REST Framework](http://www.django-rest-framework.org/).
-You can check out the hosted version [**DEMO**](http://snippod-demo-front.ap-northeast-2.elasticbeanstalk.com/) at [http://snippod-demo-front.ap-northeast-2.elasticbeanstalk.com/](http://snippod-demo-front.ap-northeast-2.elasticbeanstalk.com/).
 
 ![Alt Stack Diagram](https://raw.githubusercontent.com/shalomeir/snippod-starter-demo-app-server/master/SnippodStarterDemoAppServerArchitecture.png "Stack Diagram")
 
@@ -21,7 +20,7 @@ We made this using these technologies.
 
 ## Getting Started
 Preliminaries :
-* Python 3.4
+* Python 3.6
 * virtualenv (optional)
 
 You have to git clone this repository.
@@ -31,7 +30,7 @@ git clone https://github.com/shalomeir/snippod-starter-demo-app-server
 
 ### Installation for REST API Server
 
-- `virtualenv venv --python=python3.4`
+- `virtualenv venv --python=python3.6`
 - `source venv/bin/activate`
 - `pip install -r requirements.txt`
 - `python manage.py makemigrations && python manage.py migrate`
@@ -65,4 +64,4 @@ Contributions, questions and comments are all welcome and encouraged.
 ## License
 [MIT License](http://opensource.org/licenses/MIT).
 
-Copyright 2016, [Snippod Inc.](http://www.snippod.com/)
+Copyright 2018, [Snippod Inc.](http://www.snippod.com/)
