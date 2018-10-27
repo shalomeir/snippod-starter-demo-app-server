@@ -7,7 +7,7 @@
 [**Snippod-Starter-Demo-App-Server**](https://github.com/shalomeir/snippod-starter-demo-app-server) is a **server part** of snippod-starter demo application. A [**Snippod-Starter-Demo-App**](https://github.com/shalomeir/snippod-starter-demo-app) is a 'Full Stack Single Page Application' for the starter who want to be a web application developer. 
 
 This repository code is based on [Django](https://www.djangoproject.com/) and [django REST Framework](http://www.django-rest-framework.org/).
-You can check out the hosted version [**DEMO**](http://snippod-starter-demo-front.ap-northeast-2.elasticbeanstalk.com/) at [http://snippod-demo-front.ap-northeast-2.elasticbeanstalk.com/](http://snippod-starter-demo-front.ap-northeast-2.elasticbeanstalk.com/).
+You can check out the hosted version [**DEMO**](http://snippod-starter-demo-front.ap-northeast-2.elasticbeanstalk.com/) at [http://snippod-starter-demo-front.ap-northeast-2.elasticbeanstalk.com](http://snippod-starter-demo-front.ap-northeast-2.elasticbeanstalk.com/).
 
 ![Alt Stack Diagram](https://raw.githubusercontent.com/shalomeir/snippod-starter-demo-app-server/master/SnippodStarterDemoAppServerArchitecture.png "Stack Diagram")
 
