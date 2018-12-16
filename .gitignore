@@ -8,8 +8,8 @@ auto_default_code/
 fabric/
 fabfile/
 
-# django migrations
-djangoapps/*/migrations
+# django migrations (should not ignore django migrations)
+# djangoapps/*/migrations
 
 # Python compiled byte code
 *.pyc
