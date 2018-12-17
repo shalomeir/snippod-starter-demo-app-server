@@ -1,11 +1,12 @@
 amqp==1.4.9
-awscli==1.7.41
+awscli==1.10.4
 awsebcli==3.7.7
 bcdoc==0.16.0
 billiard==3.3.0.23
 blessed==1.9.5
 boto==2.41.0
-botocore==1.4.37
+boto3==1.3.0
+botocore==1.4.93
 cement==2.8.2
 colorama==0.3.7
 defusedxml==0.4.1
